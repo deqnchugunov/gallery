@@ -1,0 +1,517 @@
+root { 
+    display: block;
+}
+
+body {
+    background-color: #e2e2e2;
+    margin: 0px;
+    background: url('../img/graybgr1.png') #e1e1e1 repeat;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#header {
+    width: 100%;
+    height: 140px;
+}
+
+#header #top {
+    width: 100%;
+    height: 100px;
+    background: url('../img/headerbgr.png') repeat;
+}
+
+#header #top #img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+    position: relative;
+}
+
+#header #top #img #logo{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+#header #bottom {
+    width: 100%;
+    height: 40px;
+    background: url('../img/menubgr.png') repeat;
+}
+
+#header #bottom #nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+    height: 40px;
+}
+
+#header #bottom #nav #left {
+    width: 220px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header #bottom #nav #left ul.dropdown {
+    width: 100%;
+    list-style: none; 
+    position: relative; 
+    margin-top: 10px;
+    padding: 0px;
+}
+
+#header #bottom #nav #left ul.dropdown li {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#header #bottom #nav #left .dropdown li a  {
+    display: block;
+    font-family: Tahoma, Calibri, Verdana;
+    font-weight: bold;
+    font-size: 14px;
+    color: #434242;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #bbbbbb;
+}
+#header #bottom #nav #left .dropdown li a:hover {
+    color: #fff;
+    text-shadow: -1px -1px #2b2b2b
+}
+
+ul.dropdown li.hover, ul.dropdown li:hover {
+    position: relative;
+}
+ul.dropdown li.hover a { 
+    color: #fafafb;
+}
+
+ul.dropdown ul {
+    margin:0px;
+    padding:0px;
+    width: 120px;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+}
+ul.dropdown ul li { 
+    padding-top: 6px;
+    padding-bottom: 6px;
+    float: none; 
+    background: url('../img/grayline.png') repeat;
+    list-style: none;
+}
+ul.dropdown ul li a {
+    color: #000;
+    left:0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul.dropdown ul li a {
+    border-right: none; 
+    width: 110px; 
+    display: inline-block;
+    left: 0px;
+} 
+
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+#header #bottom #nav #right {
+    float: right;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+#header #bottom #nav #right a {
+    font-family: Tahoma, Calibri, Verdana, Tahoma;
+    font-weight: bold;
+    font-size: 14px;
+    color: #434242;
+    margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #bbbbbb;
+}
+
+#header #bottom #nav #right a:hover {
+    color: #fafafb;
+    text-shadow: -1px -1px #2b2b2b
+}
+
+#content {
+    width: 1020px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+#footer #copy {
+    margin-left: 5px;
+    font-family: Tahoma, Calibri, Verdana;
+    color: #777777;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#picture {
+    width: 191px;
+    height: 175px;
+    float: left;
+    background: url('../img/contentbgr.png') repeat;
+    margin-bottom: 10px;
+    margin-right: 13px;
+    margin-top: 10px;
+}
+
+.clear {
+    clear:both;
+    overflow:hidden;
+}
+
+#login {
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('../img/contentbgr.png') repeat;
+}
+
+#register {
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('../img/contentbgr.png') repeat;
+}
+
+.singleLine {
+    font-family: Verdana;
+    font-size: 12px;
+    color: #434242;
+    margin: 10px;
+}
+.pic_info {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pic_info_name {
+    font-family: Tahoma;
+    color: #434242;
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.error {
+    margin: 10px;
+    font-family: Tahoma, Calibri, Verdana;
+    color: #d70909;
+    font-size: 13px;
+}
+
+.success {
+    margin: 10px;
+    font-family: Tahoma, Calibri, Verdana;
+    color: #009900;
+    font-size: 13px;
+}
+
+.cat_name{
+    height: 20px;
+    padding: 5px;
+    font-family: Tahoma, Calibri, Tahoma;
+    font-size: 22px;
+    color: #434242;
+    font-weight: bold;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+#albums {
+    margin: 10px;
+}
+
+.album {
+    width: 185px;
+    height: 170px;
+    float: left;
+    margin-bottom: 17px;
+    margin-left: 15px;
+    margin-top: 15px;
+    background: url('../img/contentbgr.png') repeat;
+}
+
+.title {
+    font-family: Tahoma, Verdana, Calibri;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.album .img_album{
+    margin-left: 7px;
+    margin-top: 7px; 
+}
+
+.album .image {
+    width: 250px;
+    height: 250px;
+}
+
+
+#upload {
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('../img/contentbgr.png') repeat;
+}
+
+#title{
+    font-family: Verdana;
+    font-size: 14px;
+    color: #434242;
+    font-weight: bold;
+}
+
+
+#name {
+    font-family: Verdana;
+    font-size: 14px;
+    color: #434242;
+    width: 150px;
+    display: inline-block;
+}
+
+#insert_album {
+    margin: 20px;
+}
+#insert_album a{
+    font-family: Verdana;
+    font-size: 14px;
+    color: #434242;
+}
+#insert_album a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+#add_album {
+    margin: 20px;
+}
+
+#add_album #title {
+    font-family: Verdana;
+    font-size: 14px;
+    color: #434242;
+    font-weight: bold;
+}
+
+#add_album #name {
+    font-family: Verdana;
+    font-size: 14px;
+    color: #434242;
+}
+
+.rows {
+    font-family: Verdana;
+    font-size: 12px;
+    color: #434242;
+}
+
+.inputLoginForm {
+    background-color: #fafafb;
+    border: 1px solid #fff;
+    color: #777777;
+    height: 20px;
+    padding-left:1px;
+    width: 100px;
+    margin:0 5px; 
+}
+
+.submitLoginForm {
+    margin-top: 20px;
+    font-family: Tahoma, Calibri, Verdana;
+    font-style:normal;
+    font-size:13px;
+    background-color:  #434242;
+    color: #ffffff;
+    height: 25px;
+    width: 70px;
+    text-transform:none;
+    border: 1px solid #434242;
+    cursor: pointer; cursor: hand;
+}
+
+.textAreaField {
+    background-color: #eee;
+    border: 1px solid #eee;
+    color: #434242;
+    height: 20px;
+    width: 150px;
+}
+
+.textInfo {
+    display: inline-table;
+    width: 120px;
+}
+
+.selectCss {
+    background-color: #eee;
+    width: 190px;
+    height: 25px;
+    font-family: Tahoma, Calibri, Verdana;
+    font-size:14px;
+    color:#434242;
+    border: 0;
+}
+
+.backButton {
+    margin: 10px;
+}
+
+.backButton a{
+    font-family:tahoma, segoe ui, arial narrow, ariel;
+    font-weight: bold;
+    font-size:16px;
+    color: #434242;
+    margin-left: 20px;
+}
+.backButton a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#album_view {
+    margin: 20px;
+    border: 2px solid red;
+}
+
+.album_name {
+
+    font-family: Tahoma, Verdana, Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    color: #434242;
+    margin: 25px;
+}
+
+.img_preview {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+textarea#styled {
+    font-family: Tahoma, Verdana, Calibri;
+    width: 190px;
+    height: 80px;
+    border: 0;
+    color: #434242;
+    font-size: 14px;
+    background-color: #eee;
+}
+
+.edit-row {
+    font-family: Tahoma, Verdana, Calibri;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.edit-row-btn a {
+    font-family: Tahoma, Verdana, Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    color: #02a513;
+    text-decoration: none;
+}
+.edit-row-btn a:hover {
+    color: #9b000f;
+}
+
+#add-album-name {
+    font-family: Tahoma, Verdana, Calibri;
+    font-size: 14px;
+}
+
+.pager {
+    margin: 10px;
+    height: 20px;
+    text-align: center;
+}
+
+.pager a {
+    font-family: Tahoma, Verdana, Calibri;
+    font-size: 14px;
+    color: #434242;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px #d8d8d8;
+}
+
+.pager a:hover {
+    color: #fff;
+    text-shadow: -1px -1px #616161;
+}
+
+.pager-inactive {
+    font-family: Tahoma, Verdana, Calibri;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.pics-per-page {
+    font-family: Tahoma, Verdana, Calibri;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #434242;
+    text-transform: uppercase;
+}
+
+.pics-per-page a {
+    font-family: Tahoma, Verdana, Calibri;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #434242;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #d8d8d8;
+}
+
+.pics-per-page a:hover {
+    color: #fff;
+    text-shadow: -1px -1px #616161;
+}
