@@ -6,7 +6,6 @@ class Config {
     private $data = array();
 
     private function __construct() {
-        include './config/app.php';
         include './config/database.php';
         $this->data = $cnf;
     }
