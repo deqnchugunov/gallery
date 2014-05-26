@@ -61,6 +61,13 @@ include './views/header.php';
             <div class="singleLine">
                 <span class="textInfo">Description</span>
                 <span id="name"><textarea name="desc" id="styled"></textarea></span>
+                <span class="error">
+                    <?php
+                    if (isset($errors['description'])) {
+                        echo $errors['description'];
+                    }
+                    ?>
+                </span>
             </div>
             <div class="singleLine">
                 <span class="textInfo">Public</span><input type="checkbox" name="public" value="1"/> <span>(check it for public)</span>
