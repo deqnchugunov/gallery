@@ -18,7 +18,11 @@ class PictureModel extends BaseModel {
         }
 
         $description = mysqli_real_escape_string($this->db_connection, trim($desc));
-
+        
+        if (mb_strlen($description) > 150) {
+            $data['description'] = 'The maximum count of characters is 150.';
+        }
+        
         if ($chb) {
             $public = (int) $chb;
         } else {
