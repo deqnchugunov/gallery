@@ -139,10 +139,10 @@ class PictureModel extends BaseModel {
         $album_name = mysqli_real_escape_string($this->db_connection, trim($name));
         $data = array();
 
-        if (mb_strlen($album_name) < 3) {
-            $data['name'] = 'The name is too short.';
+        if (mb_strlen($album_name) < 3 || mb_strlen($album_name) > 20) {
+            $data['name'] = 'The name must be between 2 and 20 characters.';
         }
-
+        
         if (count($data) < 1) {
             $stmt = $this->db_connection->prepare("SELECT name FROM categories WHERE users_id = ? AND name = ?");
             if ($stmt) {
@@ -180,9 +180,11 @@ class PictureModel extends BaseModel {
         $album_name = mysqli_real_escape_string($this->db_connection, trim($name));
         $album_id = (int) $id;
         $data = array();
-        if (mb_strlen($album_name) < 3) {
-            $data['name'] = 'The name is too short.';
+        
+        if (mb_strlen($album_name) < 3 || mb_strlen($album_name) > 20) {
+            $data['name'] = 'The name must be between 2 and 20 characters.';
         }
+        
         if (count($data) < 1) {
             $stmt = $this->db_connection->prepare("SELECT name FROM categories WHERE users_id = ? AND categories_id = ?");
             if ($stmt) {
