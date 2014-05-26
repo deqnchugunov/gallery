@@ -10,12 +10,12 @@ class UserModel extends BaseModel {
         $pass = mysqli_real_escape_string($this->db_connection, trim($pass));
         $data = array();
 
-        if (mb_strlen($name) < 3) {
-            $data['name'] = 'The name is too short.';
+        if (mb_strlen($name) < 3 || mb_strlen($name) > 20) {
+            $data['name'] = 'The name must be between 2 and 20 characters.';
         }
 
-        if (mb_strlen($pass) < 3) {
-            $data['pass'] = 'The password is too short.';
+        if (mb_strlen($pass) < 3 || mb_strlen($pass) > 20) {
+            $data['pass'] = 'The password must be between 2 and 20 characters.';
         }
 
         if (count($data) < 1) {
@@ -59,14 +59,14 @@ class UserModel extends BaseModel {
 
         $data = array();
 
-        if (mb_strlen($user) < 3) {
-            $data['user'] = 'The name is too short.';
+        if (mb_strlen($user) < 3 || mb_strlen($name) > 20) {
+            $data['user'] = 'The name must be between 2 and 20 characters.';
         }
 
-        if (mb_strlen($pass) < 3) {
-            $data['pass'] = 'The password is too short.';
+        if (mb_strlen($pass) < 3 || mb_strlen($pass) > 20) {
+            $data['pass'] = 'The password must be between 2 and 20 characters.';
         }
-
+        
         if ($pass != $pass2) {
             $data['pass2'] = 'Passwords do not match.';
         }
